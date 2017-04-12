@@ -1,0 +1,128 @@
+@import 'https://fonts.googleapis.com/css?family=Indie+Flower';
+
+body{
+background-color: cadetblue;
+font-family: 'Indie Flower', cursive;
+}
+
+.brder {
+	border: 1px black solid; /*just for testing purposes */
+
+}
+.wrapper {
+	max-width: 100%; /* max width of screen */
+	margin: 0 auto; /* will center it. top and bottom is 0, left and right is auto */
+}
+
+img {
+	max-width: 100%; /* very important because you never know what image sizes youre going to get */
+}
+
+header {
+	padding: 10px 0;
+	clear: both;
+	text-align: center;
+}
+
+nav {
+	text-align: center;
+	padding: 10px 0;
+	margin: 10px 0 0;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 10px;
+}
+
+nav li {
+	display: inline-block; /* makes the list horizontally, and only takes the available horizontal space that the particular element needs. self contained area */
+}
+
+nav a {
+	background-color: azure;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+}
+
+nav a:hover {
+	background-color: black;
+	color: white;
+}
+
+
+#main {
+	width: 100%;
+}
+
+#first {
+	background-color: #DDD; /* grey */
+	padding: 5px;
+}
+
+#second {
+	background-color: #FFF; /* white */
+	padding: 5px;
+}
+
+footer {
+	clear: both;
+	background-color: #222;
+	text-align: center;
+	padding-top: 35px;
+	color: #CCC;
+}
+
+/* media queries, most of the time at the bottom of your styling sheet. This is where we
+ indicate that we want to specify different breakpoints of a website.
+ Breakpoints = when the webpage actually re-sizes when it hits a certain pixel-width, we want 
+ something different to happen  */
+
+
+
+@media screen and (min-width: 1200px) {
+ 	.wrapper {
+ 		max-width: 1100px;
+ 	}
+
+ }
+
+ @media screen and (min-width: 800px) {
+ 	body {
+ 		background-color: red;
+ 	}
+ 	nav {
+ 		float: left;
+ 		width: 20%;
+ 		padding: 0px;
+ 	}
+ 	#main {
+ 		float: right;
+ 		width: 79%;
+ 	}
+ 	nav ul {
+ 		padding: 0;
+ 		margin: 0;
+ 	}
+
+ 	nav li {
+ 		display: block;
+ 		padding: 10px 0px;
+ 		width: 90%
+ 	}
+
+ }
+
+ @media screen and (min-width: 520px) {
+	#first {
+		width: 48%;
+		float: left;
+	}
+	#second {
+		width: 48%;
+		float: right;
+	}
+}
